@@ -12,9 +12,22 @@
 // console.log(myCreateDate.toString);
 // Thu Apr 25 2024 05:04:00 GMT+0000 (Coordinated Universal Time)
 
-//  let myCreateDate=new Date("01-15-2024")
+ let myCreateDate=new Date("01-15-2024")
 // console.log(myCreateDate.toLocaleString());
 // 1/15/2024, 12:00:00 AM
 
-let myTimeStamp=Date.now()
-console.log(myTimeStamp)
+// let myTimeStamp=Date.now()
+// console.log(myTimeStamp);
+// // 1772909109168
+// console.log(myCreateDate.getTime());
+// 1705276800000
+
+let newDate=new Date()
+// console.log(newDate);
+// console.log(newDate.getMonth()+1);
+// console.log(newDate.getDay());
+// 2026-03-07T18:53:18.102Z
+// 3
+// 6
+
+// newDate.toLocaleString("default",{})
