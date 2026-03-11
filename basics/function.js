@@ -5,17 +5,18 @@
 //     return functionName(a,b);
 // }
 
-// // console.log(execute(1,4,add));
+// console.log(execute(1,4,add));
 
-// handleObject({
+// const handleObject={
 //     userName:"Atul",
 //     age:22
-// })
+// }
+// console.log(handleObject.userName)
 
 // const myNewArray=[200,400,100,600]
 // function returnSEconValue(getArray){
 //     reuturn getArray
-// }
+// } 
 
 
 // this function 
@@ -24,7 +25,17 @@
 // 4
 
 // implicit return for one line statement that does not need to return the value.
-const addone=(num1)=>( num1+1) 
+// const addone=(num1)=>( num1+1) 
 // returning an object
-const object=()=>
-console.log(addone(3))
+// const object=()=>({username:"Atul chaduary"})
+// console.log(object())
+// { username: 'Atul chaduary' }
+
+// IIFE(internal invoked function Expressions)
+(function chai(){
+    console.log("DB connected");
+})();
+
+(()=>{
+    console.log("DB connected two");
+})();
