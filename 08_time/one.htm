@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> working on time</title>
+</head>
+<body style="background-color:black; color:#fff">
+    <h1>with chai aur code</h1>
+    <button id="start">start</button>
+    <button id="stop">stop</button>
+</body>
+<script>
+//     const sayHi=function(){
+// console.log('hi Atul');
+//     }
+// const change=function(){
+//     document.querySelector('h1').innerHTML="learing with chai aur code";
+
+// }                  
+// const changeMe=setTimeout(change,3000);
+// document.querySelector('#stop').addEventListener('click',function(){
+//     clearTimeout(changeMe);
+//     document.querySelector('#stop').innerHTML="Stopped";  
+// })
+const start=function(){
+    console.log("interval started");
+}
+let interval;
+document.querySelector('#start').addEventListener('click',function(){
+    if(!interval) interval=setInterval(start,1000)
+})
+document.querySelector('#stop').addEventListener('click',function(){
+clearInterval(interval);
+interval=null
+})
+
+</script>
+
+</html>
